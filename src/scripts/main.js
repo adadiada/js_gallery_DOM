@@ -3,13 +3,13 @@
 const gallery = document.querySelector('.gallery');
 const largeImg = document.querySelector('#largeImg');
 
-gallery.addEventListener('click', (event) => {
-  const link = event.target.closest('a');
+gallery.addEventListener('click', (e) => {
+  const link = e.target.closest('a');
 
   if (!link) {
     return;
   }
-  event.preventDefault();
+  e.preventDefault();
 
   const bigSrc = link.href || link.dataset.preview;
 
