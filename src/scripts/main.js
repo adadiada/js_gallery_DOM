@@ -3,7 +3,7 @@
 const gallery = document.querySelector('.gallery');
 const largeImg = document.querySelector('#largeImg');
 
-gallery.addEventListener('click', () => {
+gallery.addEventListener('click', (event) => {
   const link = event.target.closest('a');
 
   if (!link) {
